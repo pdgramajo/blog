@@ -14,9 +14,6 @@ export default function getOrCreateUser(uid,username,avatar,store) {
                 }));// end resolve
             }// end if
             else{
-                console.log('+++++++++++++++    '+'user exists'+'   +++++++++++++++');
-                console.log(records);
-                debugger;
                 resolve(records.get('firstObject'));
             }// end else
         });// end store
